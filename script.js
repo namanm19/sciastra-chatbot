@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
     messageElement.innerHTML = message;
     chatBox.appendChild(messageElement);
 
-    // Scroll to the bottom to show the latest message
     chatBox.scrollTop = chatBox.scrollHeight;
   }
 
@@ -60,16 +59,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const userMessage = messageInput.value;
     displayMessage(userMessage, "user");
 
-    // Simulate bot response (replace with actual logic)
     const botResponse = generateBotResponse(userMessage);
     displayMessage(botResponse, "bot", true);
 
-    // Clear the input field
     messageInput.value = "";
   }
 
   function generateBotResponse(userMessage) {
-    // Simulate logic to find a matching question and provide its answer
     const index = questions.findIndex((question) =>
       userMessage.toLowerCase().includes(question.toLowerCase())
     );
@@ -89,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
       questionElement.className = "clickable-question";
       questionElement.textContent = question;
 
-      // Attach click event listener to each question
       questionElement.addEventListener("click", () => displayAnswer(index));
 
       chatBox.appendChild(questionElement);
@@ -109,9 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   closeBtn.addEventListener("click", closeChat);
 
-  // Display initial greeting
   displayMessage("Hello! How can I help you today?", "bot");
 
-  // Display clickable questions
   createClickableQuestions();
 });

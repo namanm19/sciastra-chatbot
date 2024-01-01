@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4; /* Added a light background color */
+  background-color: #f4f4f4;
 }
 
 #chat-container {
@@ -15,7 +15,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   color: #fff;
   overflow: hidden;
-  transition: all 0.3s ease; /* Added animation for smoother transition */
+  transition: all 0.3s ease;
 }
 
 #chat-header {
@@ -40,8 +40,8 @@ body {
 .bot-message {
   margin: 8px 0;
   padding: 10px;
-  border-radius: 10px; /* Increased border-radius for rounded corners */
-  transition: background-color 0.3s ease; /* Added animation for smoother transition */
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .user-message {
