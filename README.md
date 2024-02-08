@@ -1,6 +1,6 @@
 ## SciAstra Chatbot Documentation
 
-### Overview
+### Over-view
 The SciAstra Chatbot is an interactive tool designed to assist users with information related to SciAstra, including its mission, research focus, team, and more. The chatbot provides a user-friendly interface for answering common questions and engaging in a conversation with users.
 
 ### Features
